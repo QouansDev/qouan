@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qouan - Shirts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo-title-container">
+                <a href="https://www.roblox.com" id="cart-link" target="_blank"><div id="shopping-cart-logo"></div> <!-- Logo del carrito de compras aquí --></a>
+                <h1>Qouan's Mall</h1>
+            </div>
+        </div>
+    </header>    
+    <nav id="filters">
+        <a href="Pants.html" class="filter-link"><button class="filter-btn" data-filter="pants">Pants</button></a>
+        <a href="Shirts.html" class="filter-link"><button class="filter-btn filter-shirts" data-filter="Shirts">Shirts</button></a>
+        <a href="packs.html" class="filter-link"><button class="filter-btn" data-filter="packs">Packs</button></a>
+        <a href="Expensive.html" class="filter-link"><button class="filter-btn" data-filter="expensive">Expensive</button></a>
+        <a href="Cheap.html" class="filter-link"><button class="filter-btn" data-filter="cheap">Cheap</button></a>
+        <a href="Exclusive.html" class="filter-link"><button class="filter-btn" data-filter="exclusive">Exclusive</button></a>
+        <a href="index.html" class="filter-link"><button class="filter-btn" data-filter="sale">Sales</button></a>
+    </nav>
+
+
+
+    <div class="products-container">
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price">R$99</p>
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    <div class="product-box">
+        <img src="BasketDefault.png" alt="Nombre del producto" class="product-img">
+        <h3 class="product-name">Suit</h3>
+        <p class="product-price original-price">R$198</p> <!-- Precio original tachado -->
+        <p class="product-price discounted-price">R$99</p> <!-- Precio con descuento -->
+        <button class="btn add-to-cart-btn" id="product-big-btn">View</button>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // JavaScript para controlar la ventana modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("product-big-btn"); // Asegúrate de que el botón de agregar al carrito tenga este ID
+var span = document.getElementsByClassName("close")[0];
+
+// Cuando el usuario haga clic en el botón, abre la ventana modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Cuando el usuario haga clic en <span> (x), cierra la ventana modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic en cualquier lugar fuera de la ventana modal, ciérrala
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    </script>
+</body>
+</html>
